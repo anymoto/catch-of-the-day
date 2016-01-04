@@ -8,7 +8,7 @@ import h from '../helpers';
 import autobind from 'autobind-decorator';
 
 @autobind
-class Order extends drom React.Component {
+class Order extends React.Component {
   renderOrder(key) {
     var fish = this.props.fishes[key];
     var count = this.props.order[key];
@@ -68,7 +68,7 @@ class Order extends drom React.Component {
         </CSSTransitionGroup>
       </div>
     )
-  },
+  }
 }
 
 Order.propTypes = {
